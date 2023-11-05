@@ -19,8 +19,10 @@ jobs:
 
           # fonts
           mkdir -p fonts/
-          curl -L https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf -o fonts/SourceSans3.ttf
-          curl -L https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf -o fonts/SourceSans3-Italic.ttf
+          for wght in $(seq 200 100 900); do
+            curl -L "https://cdn.jsdelivr.net/fontsource/fonts/source-sans-3@latest/latin-$wght-normal.ttf" -o "fonts/SourceSans3-$wght.ttf"
+            curl -L "https://cdn.jsdelivr.net/fontsource/fonts/source-sans-3@latest/latin-$wght-italic.ttf" -o "fonts/SourceSans3-$wght-italic.ttf"
+          done
 
           # compile
           mkdir -p working/pdf/
