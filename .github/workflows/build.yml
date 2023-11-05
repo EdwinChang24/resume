@@ -21,12 +21,11 @@ jobs:
           mkdir -p fonts/
           curl -L https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf -o fonts/SourceSans3.ttf
           curl -L https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf -o fonts/SourceSans3-Italic.ttf
-          TYPST_FONT_PATHS=fonts/
 
           # compile
           mkdir -p working/pdf/
-          typst c working/resume.typ working/pdf/resume.pdf
-          typst c working/resume-long.typ working/pdf/resume-long.pdf
+          typst c working/resume.typ working/pdf/resume.pdf --font-path fonts/
+          typst c working/resume-long.typ working/pdf/resume-long.pdf --font-path fonts/
 
           # commit
           git config --global user.name "GitHub Actions"
