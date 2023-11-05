@@ -1,0 +1,31 @@
+name: Build with Typst
+
+on: [push]
+permissions: 
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: working
+      - run: |
+          # install typst
+          curl -OL https://github.com/typst/typst/releases/latest/download/typst-x86_64-unknown-linux-musl.tar.xz
+          tar xf typst-x86_64-unknown-linux-musl.tar.xz
+          sudo mv typst-x86_64-unknown-linux-musl/typst /bin/typst
+
+          # compile
+          mkdir working/pdf/
+          typst c working/resume.typ working/pdf/resume.pdf
+          typst c working/resume-long.typ working/pdf/resume-long.pdf
+
+          # commit
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+          cd working
+          git add pdf
+          git commit -m "chore: update PDFs"
+          git push
