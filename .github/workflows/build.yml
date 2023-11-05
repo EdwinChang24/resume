@@ -19,10 +19,9 @@ jobs:
 
           # fonts
           mkdir -p fonts/
-          for wght in $(seq 200 100 900); do
-            curl -L "https://cdn.jsdelivr.net/fontsource/fonts/source-sans-3@latest/latin-$wght-normal.ttf" -o "fonts/SourceSans3-$wght.ttf"
-            curl -L "https://cdn.jsdelivr.net/fontsource/fonts/source-sans-3@latest/latin-$wght-italic.ttf" -o "fonts/SourceSans3-$wght-italic.ttf"
-          done
+          sudo apt install fnt
+          fnt update
+          fnt install google-sourcesans3
 
           # compile
           mkdir -p working/pdf/
