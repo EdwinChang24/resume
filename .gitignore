@@ -112,6 +112,6 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/windows,macos,linux,git,visualstudiocode
 
 ### Custom ###
-resume.pdf
-resume-long.pdf
-definitions.pdf
+/resume.pdf
+/resume-long.pdf
+/definitions.pdf
