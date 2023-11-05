@@ -18,7 +18,7 @@ jobs:
           sudo mv typst-x86_64-unknown-linux-musl/typst /bin/typst
 
           # compile
-          mkdir working/pdf/
+          mkdir -p working/pdf/
           typst c working/resume.typ working/pdf/resume.pdf
           typst c working/resume-long.typ working/pdf/resume-long.pdf
 
