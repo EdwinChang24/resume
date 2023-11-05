@@ -17,12 +17,6 @@ jobs:
           tar xf typst-x86_64-unknown-linux-musl.tar.xz
           sudo mv typst-x86_64-unknown-linux-musl/typst /bin/typst
 
-          # fonts
-          mkdir -p fonts/
-          sudo apt install fnt
-          fnt update
-          fnt install google-sourcesans3
-
           # compile
           mkdir -p working/pdf/
           typst c working/resume.typ working/pdf/resume.pdf --font-path fonts/
