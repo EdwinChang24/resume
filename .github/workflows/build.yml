@@ -17,6 +17,12 @@ jobs:
           tar xf typst-x86_64-unknown-linux-musl.tar.xz
           sudo mv typst-x86_64-unknown-linux-musl/typst /bin/typst
 
+          # fonts
+          mkdir -p fonts/
+          curl -L https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3%5Bwght%5D.ttf -o fonts/SourceSans3.ttf
+          curl -L https://github.com/google/fonts/raw/main/ofl/sourcesans3/SourceSans3-Italic%5Bwght%5D.ttf -o fonts/SourceSans3-Italic.ttf
+          TYPST_FONT_PATHS=fonts/
+
           # compile
           mkdir -p working/pdf/
           typst c working/resume.typ working/pdf/resume.pdf
