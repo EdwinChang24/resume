@@ -19,8 +19,8 @@ jobs:
 
           # compile
           mkdir -p working/pdf/
-          typst c working/resume.typ working/pdf/resume.pdf --font-path fonts/
-          typst c working/resume-long.typ working/pdf/resume-long.pdf --font-path fonts/
+          typst c working/resume.typ working/pdf/resume.pdf --font-path working/fonts/
+          typst c working/resume-long.typ working/pdf/resume-long.pdf --font-path working/fonts/
 
           # commit
           git config --global user.name "GitHub Actions"
