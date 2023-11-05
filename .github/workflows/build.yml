@@ -24,7 +24,7 @@ jobs:
 
           # commit
           git config --global user.name "GitHub Actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cd working
           git add pdf
           git commit -m "chore: update PDFs"
