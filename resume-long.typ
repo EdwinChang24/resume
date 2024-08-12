@@ -13,13 +13,13 @@
 #activity(
     title: [Davis Senior High School, Davis, CA],
     subtitle: [GPA (unweighted): 3.96],
-    date: [2021 --- Present],
+    date: [2021 --- 2024],
     subtitle-inline: true
 )
 
 - *Relevant Courses:* AP Calculus AB, AP Calculus BC, AP Chemistry, AP Physics, AP Biology, Advanced Robotics Honors, AP U.S. History, AP English Literature and Composition, AP U.S. Government, AP Macroeconomics
 
-- *Self-Studied AP Courses:* AP Computer Science A, AP Physics C: Mechanics, AP Physics C: Electricity and Magnetism (to be taken), AP Statistics, AP English Language and Composition
+- *Self-Studied AP Courses:* AP Computer Science A, AP Physics C: Mechanics, AP Statistics, AP English Language and Composition
 
 - *Dual Enrollment Courses:* Calculus III
 
@@ -47,7 +47,7 @@
 #activity(
     title: [_FIRST_ Robotics Competition Team 1678: Citrus Circuits],
     subtitle: [Software Scouting Front-End Developer],
-    date: [August 2021 --- Present]
+    date: [August 2021 --- June 2024]
 )
 
 - Led design and implementation of Android and desktop apps using the Kotlin programming language for a world-leading FRC robot scouting system.
@@ -80,7 +80,7 @@
 #activity(
     title: [Davis Coding Club],
     subtitle: [Vice President --- Project Organizer],
-    date: [August 2021 --- Present]
+    date: [August 2021 --- June 2024]
 )
 
 - Taught at Python and Java workshops for elementary school students.
@@ -98,10 +98,10 @@
 #activity(
     title: [DSHS Mu Alpha Theta Math Club],
     subtitle: [Vice President --- Website Lead],
-    date: [August 2021 --- Present]
+    date: [August 2021 --- June 2024]
 )
 
-- Wrote problems for and organized the Davis Math Tournament in 2022 and 2023.
+- Wrote problems for and organized the Davis Math Tournament in 2022, 2023, and 2024.
 
 = Computing Skills
 
@@ -130,12 +130,12 @@
 #activity(title: [Flute])
 
 - Music Teachers' Association of California Certificate of Merit Level 9
-- Davis Youth Flute Choir (2018---): annual summer/winter camps
+- Davis Youth Flute Choir (2018---2024): annual summer/winter camps
 - Concerts: retirement community performances, holiday performances in parks
 
 #activity(title: [Sports])
 
-- Tennis — Davis Senior High School Junior Varsity Team (Spring 2021, 2022, 2024)
+- Tennis — Davis Senior High School Junior Varsity Team (Spring 2021, 2022)
 - Cross Country — Davis Senior High School Frosh/Soph Team (Fall 2021)
 - Swim — recreational
 
