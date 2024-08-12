@@ -28,11 +28,6 @@
         // links on right
         align(end + horizon)[#link("https://github.com/EdwinChang24")[GitHub/EdwinChang24]],
     )
-
-    // big divider
-    #line(length: 100%, stroke: 1.5pt + color-primary)
-
-    I'm a high school senior with a keen interest in computer science and technology, and how they can influence our society's future.
 ]
 
 #let activity(title: [], subtitle: [], date: [], subtitle-inline: false) = [

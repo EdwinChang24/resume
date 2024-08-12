@@ -11,6 +11,12 @@
 = Education
 
 #activity(
+    title: [University of California, Santa Barbara],
+    subtitle: [Class of 2028, College of Creative Studies Computing],
+    subtitle-inline: true
+)
+
+#activity(
     title: [Davis Senior High School, Davis, CA],
     subtitle: [GPA (unweighted): 3.96],
     date: [2021 --- 2024],
