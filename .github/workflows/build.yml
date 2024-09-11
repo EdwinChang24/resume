@@ -20,12 +20,11 @@ jobs:
           # compile
           mkdir -p working/pdf/
           typst c working/resume.typ working/pdf/resume.pdf --font-path working/fonts/
-          typst c working/resume-long.typ working/pdf/resume-long.pdf --font-path working/fonts/
 
           # commit
           git config --global user.name "GitHub Actions"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           cd working
           git add pdf
-          git commit -m "chore: update PDFs"
+          git commit -m "chore: update PDF"
           git push
