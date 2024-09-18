@@ -1,5 +1,5 @@
 #set document(title: "Edwin Chang's Résumé", author: "Edwin Chang")
-#set page(paper: "us-letter", margin: 0.35in)
+#set page(paper: "us-letter", margin: 0.3in)
 #set text(font: ("Inter", "Noto Sans SC"), size: 9.5pt)
 #set strong(delta: 100)
 #show heading.where(level: 1): it => [
@@ -106,31 +106,7 @@
   description, and a GitHub Action inserts the app name into the correct places
   and cleans up the project.
 
-= Computing Skills
-
 #v(-4pt)
-#set text(size: 8pt)
-#table(
-  columns: (auto, 1fr),
-  stroke: none,
-  inset: 4pt,
-  [*Languages*],
-  [Kotlin, Python, Java (USACO Silver), C++, XML, YAML, TOML, HTML, CSS,
-    JavaScript, TypeScript, React, Vue, Svelte, Astro, Dart, LaTeX, Markdown, Typst],
-  [*Operating Systems*],
-  [Linux (KDE Neon, Kubuntu), Windows 10/11, Android],
-  [*Tooling*],
-  [Git, GitHub (Issues, PRs, Actions, Pages, Wikis, CLI), Renovate, Cloudflare
-    (Pages, Workers, Domains, Wrangler), npm, Yarn, pnpm, Tailwind CSS, Redux, Vite,
-    Vercel, Zsh, Alacritty, Jetpack Compose, Compose Multiplatform, Google
-    Workspace, Google Apps Script, Android Studio, adb, IntelliJ IDEA, Visual Studio
-    Code, Kate, asdf, zoxide],
-  [*Other Software*],
-  [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord (Vencord, Powercord,
-    Aliucord, Vendetta), Slack, Obsidian, Kdenlive],
-)
-#set text(size: 9.5pt)
-#v(-6pt)
 
 = Education
 
@@ -168,6 +144,32 @@
     Program],
   subtitle-inline: true,
 )
+
+= Computing Skills
+
+#v(-4pt)
+#set text(size: 8.5pt)
+#table(
+  columns: (auto, 1fr),
+  stroke: none,
+  inset: 4pt,
+  [*Languages*],
+  [Kotlin, Python, Java (USACO Silver), C++, XML, YAML, TOML, HTML, CSS,
+    JavaScript, TypeScript, React, Vue, Svelte, Astro, Dart, LaTeX, Markdown, Typst],
+  [*Operating Systems*],
+  [Linux (KDE Neon, Kubuntu), Windows 10/11, Android],
+  [*Tooling*],
+  [Git, GitHub (Issues, PRs, Actions, Pages, Wikis, CLI), Renovate, Cloudflare
+    (Pages, Workers, Domains, Wrangler), npm, Yarn, pnpm, Tailwind CSS, Redux, Vite,
+    Vercel, Zsh, Alacritty, Jetpack Compose, Compose Multiplatform, Google
+    Workspace, Google Apps Script, Android Studio, adb, IntelliJ IDEA, Visual Studio
+    Code, Kate, asdf, zoxide],
+  [*Other Software*],
+  [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord (Vencord, Powercord,
+    Aliucord, Vendetta), Slack, Obsidian, Kdenlive, F-Droid],
+)
+#set text(size: 9.5pt)
+#v(-10pt)
 
 = Hobbies
 
