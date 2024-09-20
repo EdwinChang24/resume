@@ -1,5 +1,5 @@
 #set document(title: "Edwin Chang's Résumé", author: "Edwin Chang")
-#set page(paper: "us-letter", margin: 0.3in)
+#set page(paper: "us-letter", margin: 0.35in)
 #set text(font: ("Inter", "Noto Sans SC"), size: 9.5pt)
 #set strong(delta: 100)
 #show heading.where(level: 1): it => [
@@ -42,23 +42,21 @@
   ],
 )
 
-#v(-4pt)
-
 = Technical Experience
 
 #activity(
-  title: link("https://shengji.edwinchang.dev/")[升级 Display],
+  title: link("https://shengji.edwinchang.dev/")[升级 (_sheng ji_) Display],
   subtitle: [Solo Developer],
   date: [March --- September 2024],
 )
 
-- Created an elegantly functional app showing everyone at a table key information
+- Created a cross-platform mobile app showing everyone at a table key information
   about an ongoing round of #link("https://en.wikipedia.org/wiki/Sheng_ji")[升级 (_sheng ji_)],
   a family of classic Chinese card games that bring people together.
 - 升级 Display works on Android, Windows, Linux, and the web using #link(
     "https://www.jetbrains.com/lp/compose-multiplatform/",
-  )[Compose Multiplatform], and is incredibly responsive to screen size, so
-  players can use the app on any phone or tablet and get a great experience.
+  )[Compose Multiplatform], and is responsive to screen size, so players can use
+  the app on any phone or tablet.
 - Developed a website using #link("https://astro.build/")[Astro] with #link("https://astro.build/")[Svelte],
   featuring complex scroll-based animations, to showcase the app's features.
 
@@ -89,7 +87,7 @@
 
 - Conducted software-based research on DNA nanotechnology by developing a web app,
   written in #link("https://dart.dev/")[the Dart programming language] using #link("https://react.dev/")[React] and
-  #link("https://redux.js.org/")[Redux], helping researchers design synthetic DNA
+  #link("https://redux.js.org/")[Redux], to help researchers design synthetic DNA
   nanostructures.
 
 #activity(
@@ -106,7 +104,29 @@
   description, and a GitHub Action inserts the app name into the correct places
   and cleans up the project.
 
-#v(-4pt)
+= Computing Skills
+
+#v(-2pt)
+#table(
+  columns: (auto, 1fr),
+  stroke: none,
+  inset: 4pt,
+  [*Languages*],
+  [Kotlin, Python, Java, C++, XML, YAML, TOML, HTML, CSS, JavaScript, TypeScript,
+    React, Vue, Svelte, Astro, Dart, LaTeX, Markdown, Typst],
+  [*Operating Systems*],
+  [Linux (KDE Neon, Kubuntu), Windows 10/11, Android],
+  [*Tooling*],
+  [Git, GitHub (Issues, PRs, Actions, Pages, Wikis, CLI), Renovate, Cloudflare
+    (Pages, Workers, Domains, Wrangler), npm, Yarn, pnpm, Tailwind CSS, Redux, Vite,
+    Vercel, Zsh, Alacritty, Jetpack Compose, Compose Multiplatform, Google
+    Workspace, Google Apps Script, Android Studio, adb, IntelliJ IDEA, Visual Studio
+    Code, Kate, asdf, zoxide],
+  [*Other Software*],
+  [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord (Vencord, Powercord,
+    Aliucord, Vendetta), Slack, Obsidian, Kdenlive, F-Droid],
+)
+#v(-6pt)
 
 = Education
 
@@ -144,34 +164,3 @@
     Program],
   subtitle-inline: true,
 )
-
-= Computing Skills
-
-#v(-4pt)
-#set text(size: 8.5pt)
-#table(
-  columns: (auto, 1fr),
-  stroke: none,
-  inset: 4pt,
-  [*Languages*],
-  [Kotlin, Python, Java (USACO Silver), C++, XML, YAML, TOML, HTML, CSS,
-    JavaScript, TypeScript, React, Vue, Svelte, Astro, Dart, LaTeX, Markdown, Typst],
-  [*Operating Systems*],
-  [Linux (KDE Neon, Kubuntu), Windows 10/11, Android],
-  [*Tooling*],
-  [Git, GitHub (Issues, PRs, Actions, Pages, Wikis, CLI), Renovate, Cloudflare
-    (Pages, Workers, Domains, Wrangler), npm, Yarn, pnpm, Tailwind CSS, Redux, Vite,
-    Vercel, Zsh, Alacritty, Jetpack Compose, Compose Multiplatform, Google
-    Workspace, Google Apps Script, Android Studio, adb, IntelliJ IDEA, Visual Studio
-    Code, Kate, asdf, zoxide],
-  [*Other Software*],
-  [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord (Vencord, Powercord,
-    Aliucord, Vendetta), Slack, Obsidian, Kdenlive, F-Droid],
-)
-#set text(size: 9.5pt)
-#v(-10pt)
-
-= Hobbies
-
-Flute (#link("https://www.mtac.org/programs/cm/")[MTAC Certificate of Merit®] Advanced),
-Pickleball, Biking, Running, Singing, Photography
