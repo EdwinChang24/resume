@@ -43,6 +43,9 @@
       *edwinchang*.dev
     ] \
     #link("https://github.com/EdwinChang24")[GitHub\/*EdwinChang24*]
+    \
+    #link("https://linkedin.com/in/ec24")[LinkedIn\/*ec24*]
+    \
   ],
 )
 
@@ -50,15 +53,14 @@
 
 #activity(
   title: link("https://www.ucsb.edu/")[University of California, Santa Barbara],
-  subtitle: [#link("https://ccs.ucsb.edu/")[College of Creative Studies], Class of 2028],
-  date: [2024 --- Present],
+  subtitle: [#link("https://ccs.ucsb.edu/")[College of Creative Studies]],
+  date: [September 2024 --- June 2027 (Expected)],
   subtitle-inline: true,
 )
 
-- Major: #link("https://ccs.ucsb.edu/majors/computing")[*Computing*] (Computer Science B.S. Equivalent)
-- GPA: *3.93*
+- Major: #link("https://ccs.ucsb.edu/majors/computing")[*Computing*] (Computer Science B.S. Equivalent), GPA: *3.93*
 - Relevant Coursework: Data Structures and Algorithms, Computer Architecture, Linear Algebra, Differential Equations,
-  Quantum Computing Fundamentals
+  Quantum Computing Fundamentals, Probability and Statistics
 
 #activity(
   title: link("https://dshs.djusd.net/")[Davis Senior High School, Davis, CA],
@@ -71,8 +73,10 @@
 
 #activity(title: [Google], subtitle: [Associate Software Developer Intern], date: [June --- September 2025])
 
-- Developed a page for loyalty program members in Google Play Store for Android, enhancing UX for over 2.5 billion monthly active users.
+- Developed the reward center page for loyalty program members in Google Play Store for Android, enhancing UX for over 2.5 billion monthly active users.
 - Worked extensively across Play's full stack, in both Java and Kotlin, to implement content loading, filtering, and sorting in a high-traffic environment.
+- Designed and implemented a new UI element across the full stack for the loyalty program's upcoming event page.
+- Created a design document comparing implementation options for a complex upcoming feature requiring unconventional technology.
 
 #activity(
   title: link("https://shengji.edwinchang.dev/")[升级 (_sheng ji_) Display],
@@ -96,12 +100,9 @@
   date: [August 2021 --- June 2024],
 )
 
-- Led design and implementation of Android and desktop apps using the Kotlin
-  programming language for a world-leading FRC robot scouting system, contributing significantly to the team winning its world championship division in 2022-2024.
-- Headed a team of counselors at Davis Youth Robotics' summer RoboCamps, serving students through 8th grade.
-- Led the Shelter Finder outreach project, collaborating with community members
-  and developing a web app to help police officers in the local community locate
-  available homeless shelters for those in need.
+- Led design and implementation of Android and desktop apps in #link("https://kotlinlang.org/")[Kotlin] for a world-leading FRC robot scouting system, contributing significantly to the team winning its world championship division in 2022-2024.
+- Led the Shelter Finder outreach project, developing a web app to help police locate available homeless shelters.
+- Wrote whitepaper on the scouting system's architecture and design, and publicly released the source code, now widely adopted by other teams as a reference design.
 
 #activity(
   title: link("https://scadnano.org/")[scadnano],
@@ -110,7 +111,7 @@
 )
 
 - Conducted software-based research on DNA nanotechnology by developing a web app,
-  written in #link("https://dart.dev/")[the Dart programming language] using #link("https://react.dev/")[React] and
+  written in #link("https://dart.dev/")[Dart] using #link("https://react.dev/")[React] and
   #link("https://redux.js.org/")[Redux], to help researchers design synthetic DNA nanostructures.
 
 = Computing Skills
@@ -120,14 +121,15 @@
   columns: (auto, 1fr),
   stroke: none,
   inset: 4pt,
-  [*Languages*], [Kotlin, Python, Java, C++, (X/YA/TO/HT)ML, CSS, JavaScript, TypeScript, Dart, LaTeX, Markdown, Typst],
+  [*Languages*],
+  [Kotlin, Python, Java, C++, (X/YA/TO/HT)ML, CSS, JavaScript, TypeScript, Dart, LaTeX, Markdown, Typst, Starlark],
 
-  [*Operating Systems*], [Linux (Fedora, KDE Neon, Kubuntu), Windows 10/11, Android, ChromeOS, iPadOS],
+  [*Operating Systems*], [Linux (Fedora, gLinux, KDE Neon, Kubuntu), Windows 10/11, Android, ChromeOS, i(Pad)OS],
   [*Libraries/Frameworks*],
   [Jetpack Compose, Compose Multiplatform, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script],
 
   [*Tooling*],
-  [ChatGPT, Google Gemini, DeepSeek, Ollama, Git, GitHub (Copilot, Issues, PRs, Actions, Pages, Wikis, Gists, CLI), Renovate, Cloudflare (Pages, Workers, Domains, Wrangler), npm, Yarn, pnpm, Vite, Vercel, Zsh, Alacritty, Google Workspace, Android Studio, IntelliJ IDEA, Visual Studio Code, Kate, adb, asdf, zoxide],
+  [ChatGPT, Google Gemini (internal/external, AI coding agent), MCP, Ollama, Git, GitHub (Copilot, Actions, CLI), Cloudflare Pages, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, Android Studio, IntelliJ IDEA, Visual Studio Code, Kate, adb, asdf, zoxide],
 
   [*Other Software*], [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord, Slack, Obsidian, Kdenlive, F-Droid],
 )
