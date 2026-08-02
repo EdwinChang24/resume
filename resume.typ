@@ -13,7 +13,7 @@
   #grid(
     columns: (1fr, auto),
     if subtitle-inline [
-      == #title #text(weight: "regular")[--- #subtitle]
+      == #title #text(weight: "regular")[-- #subtitle]
     ] else [
       == #title
       #text(style: "italic", size: 9pt)[#subtitle]
@@ -54,24 +54,36 @@
 #activity(
   title: link("https://www.ucsb.edu/")[University of California, Santa Barbara],
   subtitle: [#link("https://ccs.ucsb.edu/")[College of Creative Studies]],
-  date: [September 2024 --- June 2027 (Expected)],
+  date: [September 2024 -- June 2027 (Expected)],
   subtitle-inline: true,
 )
 
-- Major: #link("https://ccs.ucsb.edu/majors/computing")[*Computing*] (Computer Science B.S. Equivalent), GPA: *3.93*
-- Relevant Coursework: Data Structures and Algorithms, Computer Architecture, Linear Algebra, Differential Equations,
-  Quantum Computing Fundamentals, Probability and Statistics
+- Major: #link("https://ccs.ucsb.edu/majors/computing")[*Computing*] (Computer Science B.S. Equivalent), GPA: *3.94*
+- Relevant Coursework: Data Structures and Algorithms, AI Alignment, Operating Systems, Distributed Systems, Networks, Computer Architecture, Quantum Computing
 
 #activity(
   title: link("https://dshs.djusd.net/")[Davis Senior High School, Davis, CA],
   subtitle: [GPA (unweighted): 3.96],
-  date: [2021 --- 2024],
+  date: [2021 -- 2024],
   subtitle-inline: true,
 )
 
 = Technical Experience
 
-#activity(title: [Google], subtitle: [Associate Software Developer Intern], date: [June --- September 2025])
+#activity(
+  title: link("https://dailynexus.com/")[Daily Nexus],
+  subtitle: [Android App Developer],
+  date: [October 2025 -- Present],
+)
+
+- Developed the first Android app for the #link("https://dailynexus.com/")[_Daily Nexus_], the premier award-winning newspaper at UC Santa Barbara.
+- Designed a modular, multiplatform-ready architecture with Decompose and Koin, providing local SQLite caching, efficient pagination, and an elegant Material-based UI.
+
+#activity(
+  title: link("https://www.google.com")[Google],
+  subtitle: [Associate Software Developer Intern],
+  date: [June -- September 2025],
+)
 
 - Developed the reward center page for loyalty program members in Google Play Store for Android, enhancing UX for over 2.5 billion monthly active users.
 - Worked extensively across Play's full stack, in both Java and Kotlin, to implement content loading, filtering, and sorting in a high-traffic environment.
@@ -81,7 +93,7 @@
 #activity(
   title: link("https://shengji.edwinchang.dev/")[升级 (_sheng ji_) Display],
   subtitle: [Solo Developer],
-  date: [March --- September 2024],
+  date: [March -- September 2024],
 )
 
 - Created a cross-platform mobile app showing everyone at a table key information
@@ -97,22 +109,11 @@
     "https://www.citruscircuits.org/",
   )[_FIRST_ Robotics Competition Team 1678: Citrus Circuits],
   subtitle: [Software Scouting Front-End Developer],
-  date: [August 2021 --- June 2024],
+  date: [August 2021 -- June 2024],
 )
 
 - Led design and implementation of Android and desktop apps in #link("https://kotlinlang.org/")[Kotlin] for a world-leading FRC robot scouting system, contributing significantly to the team winning its world championship division in 2022-2024.
-- Led the Shelter Finder outreach project, developing a web app to help police locate available homeless shelters.
 - Wrote whitepaper on the scouting system's architecture and design, and publicly released the source code, now widely adopted by other teams as a reference design.
-
-#activity(
-  title: link("https://scadnano.org/")[scadnano],
-  subtitle: [Software Engineering Intern under Prof. David Doty, UC Davis Molecular Computing],
-  date: [June 2022 --- September 2024],
-)
-
-- Conducted software-based research on DNA nanotechnology by developing a web app,
-  written in #link("https://dart.dev/")[Dart] using #link("https://react.dev/")[React] and
-  #link("https://redux.js.org/")[Redux], to help researchers design synthetic DNA nanostructures.
 
 = Computing Skills
 
@@ -122,14 +123,14 @@
   stroke: none,
   inset: 4pt,
   [*Languages*],
-  [Kotlin, Python, Java, C++, (X/YA/TO/HT)ML, CSS, JavaScript, TypeScript, Dart, LaTeX, Markdown, Typst, Starlark],
+  [Kotlin, Python, Java, C, C++, (X/YA/TO/HT)ML, CSS, JavaScript, TypeScript, Dart, Markdown, LaTeX, Typst, Starlark],
 
   [*Operating Systems*], [Linux (Fedora, gLinux, KDE Neon, Kubuntu), Windows 10/11, Android, ChromeOS, i(Pad)OS],
   [*Libraries/Frameworks*],
-  [Jetpack Compose, Compose Multiplatform, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script],
+  [Jetpack Compose, Compose Multiplatform, Decompose, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script],
 
   [*Tooling*],
-  [ChatGPT, Google Gemini (internal/external, AI coding agent), MCP, Ollama, Git, GitHub (Copilot, Actions, CLI), Cloudflare Pages, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, Android Studio, IntelliJ IDEA, Visual Studio Code, Kate, adb, asdf, zoxide],
+  [Google Gemini (internal/external), ChatGPT, Ollama, Git, GitHub, Cloudflare, AWS, Google Cloud, MongoDB, Docker, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, adb, IntelliJ IDEA, Visual Studio Code, Kate, mise, just, zoxide],
 
   [*Other Software*], [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord, Slack, Obsidian, Kdenlive, F-Droid],
 )
