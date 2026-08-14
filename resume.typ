@@ -1,5 +1,5 @@
 #set document(title: "Edwin Chang's Resume", author: "Edwin Chang")
-#set page(paper: "us-letter", margin: 0.3in)
+#set page(paper: "us-letter", margin: 0.4in)
 #set text(font: ("Inter", "Noto Sans SC"), size: 10pt)
 #set strong(delta: 100)
 #show heading.where(level: 1): it => [
@@ -49,6 +49,8 @@
   ],
 )
 
+#v(-2pt)
+
 = Education
 
 #activity(
@@ -59,7 +61,7 @@
 )
 
 - Major: #link("https://ccs.ucsb.edu/majors/computing")[*Computing*] (Computer Science B.S. Equivalent), GPA: *3.94*
-- Relevant Coursework: Data Structures and Algorithms, AI Alignment, Operating Systems, Distributed Systems, Networks, Computer Architecture, Quantum Computing
+- Relevant Coursework: Data Structures and Algorithms, AI Alignment, Operating Systems, Distributed Systems, Networks, Computer Architecture, Quantum Computing, Computer Security
 
 #activity(
   title: link("https://dshs.djusd.net/")[Davis Senior High School, Davis, CA],
@@ -77,7 +79,7 @@
 )
 
 - Developed the automation editing feature for Ask Home in the #link("https://home.google.com/welcome/")[Google Home app] for Android (1B+ users), piloting the use of generative UI powered by #link("https://a2ui.org/")[the A2UI framework] in AI chat responses.
-- Wrote a rigorous design doc combining input from engineering, UX, and platform teams.
+- Wrote a rigorous design doc built on input from engineering, UX, and platform teams.
 - Worked AI-first in 7 languages across Android/iOS frontends, Home's backend, and multi-agent frameworks.
 
 #activity(
@@ -131,14 +133,14 @@
     stroke: none,
     inset: 4pt,
     [*Languages*],
-    [Kotlin, Python, Java, C, C++, (X/YA/TO/HT)ML, CSS, JavaScript, TypeScript, Dart, LaTeX, Typst, Starlark],
+    [Kotlin, Java, Python, C, C++, HTML, CSS, JS, TS, Dart, Go, LaTeX, Typst, Protobuf, Starlark],
 
-    [*Operating Systems*], [Linux (Fedora, gLinux, KDE Neon, Kubuntu), Windows 10/11, Android, ChromeOS, i(Pad)OS],
+    [*Operating Systems*], [Linux (Fedora, KDE neon, Kubuntu, gLinux), Windows 10/11, Android, ChromeOS, iOS, iPadOS],
     [*Libraries/Frameworks*],
-    [Jetpack Compose, Compose Multiplatform, Decompose, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script],
+    [Jetpack Compose, Compose Multiplatform, Decompose, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script, A2UI],
 
     [*Tooling*],
-    [Google Gemini (internal/external), ChatGPT, Ollama, Git, GitHub, Cloudflare, AWS, Google Cloud, MongoDB, Docker, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, adb, IntelliJ IDEA, Visual Studio Code, Kate, mise, just, zoxide, Jujutsu],
+    [Google Gemini (internal/external), ChatGPT, Ollama, Git, GitHub, Jujutsu, Cloudflare, AWS, Google Cloud, MongoDB, Oracle Cloud, Docker, Figma, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, adb, IntelliJ IDEA, Visual Studio Code, Kate, mise, just, zoxide],
 
     [*Other Software*], [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord, Slack, Obsidian, Kdenlive, F-Droid],
   )
