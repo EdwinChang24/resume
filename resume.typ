@@ -9,15 +9,10 @@
 ]
 #show heading.where(level: 2): set text(weight: "medium", size: 10pt)
 
-#let activity(title: [], subtitle: [], date: [], subtitle-inline: false) = [
+#let activity(title: [], subtitle: [], date: [], subtitle-emph: true) = [
   #grid(
     columns: (1fr, auto),
-    if subtitle-inline [
-      == #title #text(weight: "regular")[-- #subtitle]
-    ] else [
-      == #title
-      #text(style: "italic", size: 9pt)[#subtitle]
-    ],
+    [== #title #text(weight: "regular")[#sym.dot.c #if subtitle-emph [#emph(subtitle)] else [#subtitle]]],
     align(end)[#text(weight: "medium")[#date]],
   )
   #v(-4pt)
@@ -29,9 +24,9 @@
   align(
     start + horizon,
   )[
-    Davis, California \
+    #link("https://www.cityofdavis.org/")[Davis, California] \
     #link("mailto:edwinchang2024@gmail.com")[*edwinchang2024*\@gmail.com] \
-    (510) 579-4552
+    #link("tel:+15105794552")[(510) 579-4552]
   ],
   // name in middle
   align(
@@ -57,20 +52,13 @@
   title: link("https://www.ucsb.edu/")[University of California, Santa Barbara],
   subtitle: [#link("https://ccs.ucsb.edu/")[College of Creative Studies]],
   date: [September 2024 -- June 2027 (Expected)],
-  subtitle-inline: true,
+  subtitle-emph: false,
 )
 
-- Major: #link("https://ccs.ucsb.edu/majors/computing")[*Computing*] (Computer Science B.S. Equivalent), GPA: *3.94*
+- Degree: #link("https://ccs.ucsb.edu/majors/computing")[*B.S. Computer Science*], GPA: *3.95*
 - Relevant Coursework: Data Structures and Algorithms, AI Alignment, Operating Systems, Distributed Systems, Networks, Computer Architecture, Quantum Computing, Computer Security
 
-#activity(
-  title: link("https://dshs.djusd.net/")[Davis Senior High School, Davis, CA],
-  subtitle: [GPA (unweighted): 3.96],
-  date: [2021 -- 2024],
-  subtitle-inline: true,
-)
-
-= Technical Experience
+= Software Engineering Experience
 
 #activity(
   title: link("https://www.google.com")[Google],
@@ -78,18 +66,9 @@
   date: [June -- September 2026],
 )
 
-- Developed the automation editing feature for Ask Home in the #link("https://home.google.com/welcome/")[Google Home app] for Android (1B+ users), piloting the use of generative UI powered by #link("https://a2ui.org/")[the A2UI framework] in AI chat responses.
-- Wrote a rigorous design doc built on input from engineering, UX, and platform teams.
-- Worked AI-first in 7 languages across Android/iOS frontends, Home's backend, and multi-agent frameworks.
-
-#activity(
-  title: link("https://dailynexus.com/")[Daily Nexus],
-  subtitle: [Android App Developer],
-  date: [October 2025 -- Present],
-)
-
-- Developed the first Android app for the #link("https://dailynexus.com/")[_Daily Nexus_], the premier award-winning newspaper at #link("https://www.ucsb.edu/")[UC Santa Barbara].
-- Designed a modular, multiplatform-ready architecture with #link("https://arkivanov.github.io/Decompose/")[Decompose] and #link("https://insert-koin.io/")[Koin], and used it to implement local SQLite caching, efficient pagination, and an elegant #link("https://m3.material.io/")[Material 3] UI.
+- Developed automation-editing functionality for Ask Home in the #link("https://home.google.com/welcome/")[Google Home app] for Android (1B+ users), pioneering generative UI experiences powered by #link("https://a2ui.org/")[Google's A2UI framework] in AI chat responses.
+- Authored and presented a rigorous design doc built on continuous input from engineering, UX, and platform teams.
+- Worked AI-first in 7 languages across multi-agent frameworks, Android/iOS frontends, and Home's backend.
 
 #activity(
   title: link("https://www.google.com")[Google],
@@ -97,10 +76,40 @@
   date: [June -- September 2025],
 )
 
-- Developed the reward center page for loyalty program members in #link("https://google.play")[Google Play Store] for Android, enhancing UX for its 2.5+ billion monthly active users across 190+ markets worldwide.
+- Developed a loyalty rewards center experience in #link("https://google.play")[Google Play Store] for Android, enhancing UX for its 2.5+ billion monthly active users across 190+ markets worldwide.
 - Worked across Play's full Java/Kotlin stack to implement loading, filtering, and sorting in a high-traffic environment.
-- Designed and implemented a new UI element across the full stack for the loyalty program's upcoming event page.
-- Created a design doc comparing implementation paths for an upcoming feature using unconventional technology.
+- Designed and implemented a new UI element spanning the full stack for a loyalty program event page.
+- Wrote detailed doc on implementation paths/tradeoffs for an upcoming feature using unconventional technology.
+
+#activity(
+  title: link("https://dailynexus.com/")[Daily Nexus],
+  subtitle: [Android App Developer],
+  date: [October 2025 -- June 2026],
+)
+
+- Developed the first Android app for the #link("https://dailynexus.com/")[_Daily Nexus_], the premier award-winning newspaper at #link("https://www.ucsb.edu/")[UC Santa Barbara].
+- Designed a modular, multiplatform-ready architecture with #link("https://arkivanov.github.io/Decompose/")[Decompose] and #link("https://insert-koin.io/")[Koin], and used it to implement local SQLite caching, efficient pagination, and an elegant #link("https://m3.material.io/")[Material 3] UI for comfortable browsing.
+
+#activity(
+  title: link(
+    "https://www.citruscircuits.org/",
+  )[_FIRST_ Robotics Competition Team 1678: Citrus Circuits],
+  subtitle: [Scouting Front-End Developer],
+  date: [August 2021 -- June 2024],
+)
+
+- Led design and implementation of Android and desktop apps in #link("https://kotlinlang.org/")[Kotlin] for a world-leading #link("https://www.firstinspires.org/programs/frc/")[FRC] robot scouting system, bringing the team to first place in its world championship division in 2022-2024.
+- Wrote #link("https://www.citruscircuits.org/_files/ugd/146bfa_67e5335bfdf14b9aa0398b6ca3679532.pdf")[whitepaper] on the scouting system's architecture and design, now a role model for other teams.
+
+= Selected Projects
+
+#activity(
+  title: link("https://edwinchang.dev/pyrtlsweeper/")[PyRTLSweeper],
+  subtitle: [Solo Developer],
+  date: [May -- November 2025],
+)
+
+- Developed a Python package that compiles any #link("https://en.wikipedia.org/wiki/Combinational_logic")[combinational logic] circuit into a Minesweeper board which simulates the circuit's logic when solved, and presented a #link("https://edwinchang.dev/pyrtlsweeper/paper.pdf")[paper], #link("https://edwinchang.dev/pyrtlsweeper/poster.pdf")[poster], and #link("https://youtu.be/34RXtKhsOSs")[talk] on the project at #link("https://ccs.ucsb.edu/RACA-CON")[a conference].
 
 #activity(
   title: link("https://shengji.edwinchang.dev/")[升级 (_sheng ji_) Display],
@@ -108,40 +117,26 @@
   date: [March -- September 2024],
 )
 
-- Created a #link("https://www.jetbrains.com/lp/compose-multiplatform/")[Compose Multiplatform] (Android, Windows, Linux, web) mobile app showing everyone at a table key info during a round of #link("https://en.wikipedia.org/wiki/Sheng_ji")[升级 (_sheng ji_)], a family of classic Chinese card games that bring people together.
+- Created a #link("https://www.jetbrains.com/lp/compose-multiplatform/")[Compose Multiplatform] (Android, Windows, Linux, web) app showing everyone at a table key info during a round of #link("https://en.wikipedia.org/wiki/Sheng_ji")[升级 (_sheng ji_)], a family of classic Chinese card games that bring people together.
 - Built a website using #link("https://astro.build/")[Astro] with #link("https://svelte.dev/")[Svelte], featuring complex scroll-based animations, to showcase the app's features.
-
-#activity(
-  title: link(
-    "https://www.citruscircuits.org/",
-  )[_FIRST_ Robotics Competition Team 1678: Citrus Circuits],
-  subtitle: [Software Scouting Front-End Developer],
-  date: [August 2021 -- June 2024],
-)
-
-- Led design and implementation of Android and desktop apps in #link("https://kotlinlang.org/")[Kotlin] for a world-leading #link("https://www.firstinspires.org/programs/frc/")[FRC] robot scouting system, bringing the team to first place in its world championship division in 2022-2024.
-- Wrote #link("https://www.citruscircuits.org/_files/ugd/146bfa_67e5335bfdf14b9aa0398b6ca3679532.pdf")[whitepaper] on the scouting system's architecture and design, now a role model for other teams.
 
 = Computing Skills
 
 #v(-2pt)
 
-#[
-  #set text(size: 9.5pt)
-  #table(
-    columns: (auto, 1fr),
-    stroke: none,
-    inset: 4pt,
-    [*Languages*],
-    [Kotlin, Java, Python, C, C++, HTML, CSS, JS, TS, Dart, Go, LaTeX, Typst, Protobuf, Starlark],
+#table(
+  columns: (auto, 1fr),
+  stroke: none,
+  inset: 4pt,
+  [*Languages*], [Kotlin, Java, Python, C, C++, HTML, CSS, JS, TS, Dart, Go, LaTeX, Typst, Protobuf, Starlark],
 
-    [*Operating Systems*], [Linux (Fedora, KDE neon, Kubuntu, gLinux), Windows 10/11, Android, ChromeOS, iOS, iPadOS],
-    [*Libraries/Frameworks*],
-    [Jetpack Compose, Compose Multiplatform, Decompose, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script, A2UI],
+  [*Libraries/Frameworks*],
+  [Jetpack Compose, Compose Multiplatform, Decompose, Dagger, Hilt, Koin, Room, JUnit, React, Vue, Svelte, Astro, Next.js, Nuxt, Redux, Tailwind CSS, Google Apps Script, A2UI],
 
-    [*Tooling*],
-    [Google Gemini (internal/external), ChatGPT, Ollama, Git, GitHub, Jujutsu, Cloudflare, AWS, Google Cloud, MongoDB, Oracle Cloud, Docker, Figma, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, adb, IntelliJ IDEA, Visual Studio Code, Kate, mise, just, zoxide],
+  [*Tooling*],
+  [Google Gemini (internal/external), ChatGPT, Ollama, Git, GitHub, Jujutsu, Cloudflare, AWS, Google Cloud, MongoDB, Oracle Cloud, Docker, Figma, npm, Yarn, pnpm, Vite, Vercel, Renovate, Zsh, Alacritty, adb, IntelliJ IDEA, Visual Studio Code, Kate, mise, just, zoxide],
 
-    [*Other Software*], [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord, Slack, Obsidian, Kdenlive, F-Droid],
-  )
-]
+  [*Operating Systems*], [Linux (Fedora, KDE neon, Kubuntu), Android, Windows, ChromeOS, iOS, iPadOS, macOS],
+
+  [*Other Software*], [Firefox, Thunderbird, Tailscale, GIMP, Inkscape, Discord, Slack, Obsidian, Kdenlive, F-Droid],
+)
